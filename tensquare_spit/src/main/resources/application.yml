@@ -1,0 +1,17 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: tensquare-spit #指定服务名
+  data:
+    mongodb:
+      host: 192.168.88.136
+      database: spitdb
+  redis:
+    host: 192.168.88.136
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true #以ip地址形式注册到注册中心
